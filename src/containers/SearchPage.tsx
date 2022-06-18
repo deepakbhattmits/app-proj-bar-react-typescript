@@ -85,7 +85,7 @@ interface IProp{
 	[prop:string]:any
 }
 const SearchPage:FC<IProp> = (props) => {
-	const dispatch=useDispatch();
+	const dispatch:(dispatch: any) => Promise<void>=useDispatch();
 	const [beerName,setBeerName]=useState('');
 	 const val = useDebounce(beerName, 500);
 	const handleChange = (e:any) => {
