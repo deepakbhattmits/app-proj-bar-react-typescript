@@ -11,7 +11,7 @@ interface IndexDBEvent{
 	[props:string]:any
 }
 const MainPage = () => {
-	const dispatch = useDispatch();
+	const dispatch:(dispatch: any) => Promise<void> = useDispatch();
 
 	let idb:any = null;
 	const [db, setDb] = useState('default');
