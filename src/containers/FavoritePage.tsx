@@ -8,7 +8,7 @@ interface RootState{
 const FavoritePage = () => {
 	const favoriteBeer = useSelector((state:RootState) => state.beerData.favorites);
 	// console.log("test: ",favoriteBeer);
-	const dispatch = useDispatch();
+	const dispatch:(dispatch: any) => Promise<void> = useDispatch();
 	return (
 		<div className='ui row'>
 			<FavoriteComponent
