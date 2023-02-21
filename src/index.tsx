@@ -4,7 +4,11 @@
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import reduxThunk from "redux-thunk";
-import { createStore, applyMiddleware, compose } from "redux";
+import {
+  legacy_createStore as createStore,
+  applyMiddleware,
+  compose,
+} from "redux";
 import { store } from "./helpers";
 import ReactRouter from "./router/ReactRouter";
 import "./assets/styles/_style.scss";
