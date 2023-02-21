@@ -19,15 +19,15 @@ body {
 }
 
 @font-face {
-  font-family: 'openSansRegular';
-  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: "openSansRegular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
 
   /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: 'openSansBold';
-  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-family: "openSansBold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
 
   /* Safari, Android, iOS */
 }
@@ -41,6 +41,8 @@ body {
 header,
 footer {
   height: 40px;
+  position: fixed;
+  width: inherit;
 }
 
 article {
