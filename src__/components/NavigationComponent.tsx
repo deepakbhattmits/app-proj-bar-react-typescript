@@ -2,7 +2,7 @@
 
 import {FC} from 'react';
 // import React, { useRef, useEffect, useCallback } from 'react';
-import { ReactComponent as CalenderSVG } from '../assets/images/icon-calendar.svg';
+// import { ReactComponent as CalenderSVG } from '../assets/images/icon-calendar.svg';
 
 import { NavLink } from 'react-router-dom';
 // import daterangepicker from 'daterangepicker';
