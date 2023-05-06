@@ -43,7 +43,7 @@ const Navigation: FC<IProp> = (props) => {
     <div className="ui secondary  menu">
       <div className="item">
         <NavLink className="ui header text-capitalize" to="/">
-          Project Name
+          Project bar
         </NavLink>
       </div>
       {/* <div id='reportrange' className='date-range-wrapper'>

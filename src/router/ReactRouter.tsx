@@ -16,25 +16,27 @@ const ReactRouter: FC = (): JSX.Element => (
   <Suspense fallback={<LoadingSpinner />}>
     <HashRouter>
       {/* <ScrollToTop> */}
-      <header>
-        <Header />
-      </header>
+      <div className="main__wrapper">
+        <header className="main__wrapper--header">
+          <Header />
+        </header>
 
-      <article>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
+        <main className="main__wrapper--main">
+          <Routes>
+            <Route path="/" element={<MainPage />} />
 
-          <Route path="/home" element={<MainPage />} />
+            <Route path="/home" element={<MainPage />} />
 
-          <Route path="/favorite" element={<FavoritePage />} />
+            <Route path="/favorite" element={<FavoritePage />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </article>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
 
-      <footer>
-        <Footer />
-      </footer>
+        <footer className="main__wrapper--footer">
+          <Footer />
+        </footer>
+      </div>
       {/* </ScrollToTop> */}
     </HashRouter>
   </Suspense>
