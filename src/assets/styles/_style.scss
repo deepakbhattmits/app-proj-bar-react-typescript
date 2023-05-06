@@ -42,7 +42,8 @@ header,
 footer {
   height: 40px;
   position: fixed;
-  width: inherit;
+  width: 100%;
+  z-index: 9;
 }
 
 article {
@@ -173,5 +174,17 @@ article {
     width: 100%;
     padding-left: 1.8rem;
     cursor: pointer;
+  }
+}
+.main__wrapper {
+  display: grid;
+  &--header {
+    top: 0;
+  }
+  &--main {
+    margin-top: 45px;
+  }
+  &--footer {
+    bottom: 0;
   }
 }
