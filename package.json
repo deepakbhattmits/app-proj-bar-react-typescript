@@ -6,7 +6,7 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.0",
+    "@reduxjs/toolkit": "^2.12.0",
     "axios": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -15,9 +15,6 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "^5.0.1",
     "react-toastify": "^9.1.1",
-    "redux": "^4.2.0",
-    "redux-persist": "6.0.0",
-    "redux-thunk": "^2.4.2",
     "sass": "^1.56.1"
   },
   "devDependencies": {
