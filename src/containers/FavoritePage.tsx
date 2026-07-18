@@ -9,9 +9,9 @@ const FavoritePage = () => {
 	const favoriteProducts = useSelector((state: RootState) => state.productData.favorites);
 	const dispatch: (dispatch: any) => Promise<void> = useDispatch();
 	return (
-		<div className='ui row'>
+		<div className='w-full'>
 			<FavoriteComponent
-				fBeers={favoriteProducts}
+				fProducts={favoriteProducts}
 				umarkFav={(e: any) => dispatch(removeFromfavorites(e))}
 			/>
 		</div>

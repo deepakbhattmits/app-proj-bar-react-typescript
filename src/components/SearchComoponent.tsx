@@ -13,8 +13,8 @@ const SearchComoponent: FC<IProp> = ({
 	buttonClick,
 }): JSX.Element => {
 	return (
-		<div className='ui category search'>
-			<div className='ui icon input'>
+		<div className='mx-auto w-full max-w-xl'>
+			<div className='flex items-center gap-2'>
 				<input
 					className={classNameSearch}
 					name='productName'
@@ -24,9 +24,9 @@ const SearchComoponent: FC<IProp> = ({
 					onChange={handleChange}
 					onKeyUp={onKeyUp}
 				/>
-				<span className={classNameButton} onClick={buttonClick}>
+				<button type='button' className={classNameButton} onClick={buttonClick}>
 					Search
-				</span>
+				</button>
 			</div>
 		</div>
 	);
