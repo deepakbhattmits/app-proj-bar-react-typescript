@@ -1,4 +1,4 @@
 /** @format */
 
-//  getBeer
-export * from './getBeer';
+// product actions
+export * from './getProducts';
