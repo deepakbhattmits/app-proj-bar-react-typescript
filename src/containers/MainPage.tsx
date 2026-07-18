@@ -30,7 +30,7 @@ const MainPage = () => {
   return (
     <>
       <SearchPage setIsLoading={setIsLoading} />
-      <div className="ui row">
+      <div className="w-full">
         <MainComponent
           beers={products}
           favorites={favorites}

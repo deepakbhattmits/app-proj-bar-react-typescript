@@ -1,21 +1,22 @@
 /** @format */
 import { NavLink } from "react-router-dom";
-//  Navigation
+
 const Navigation = () => (
-  <div className="ui secondary  menu footer">
-    <div className="item">
-      {/* <NavLink className='ui header text-capitalize' to='/'>
-				Project Name : ( footer )
-			</NavLink> */}
+  <footer className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-slate-900 text-white shadow-lg">
+    <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <div className="text-sm font-semibold uppercase tracking-wide text-slate-100">
+        Product Catalog
+      </div>
+      <div className="flex items-center gap-4">
+        <NavLink className="text-sm uppercase text-slate-200 hover:text-white" to="/home">
+          home
+        </NavLink>
+        <NavLink className="text-sm uppercase text-slate-200 hover:text-white" to="/favorite">
+          favorite
+        </NavLink>
+      </div>
     </div>
-    <div className="right menu">
-      <NavLink className="item text-uppercase" to="/home">
-        home
-      </NavLink>
-      <NavLink className="item text-uppercase" to="/favorite">
-        favorite
-      </NavLink>
-    </div>
-  </div>
+  </footer>
 );
+
 export default Navigation;
