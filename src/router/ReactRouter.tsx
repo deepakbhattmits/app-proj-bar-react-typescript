@@ -17,7 +17,7 @@ const ReactRouter: FC = (): JSX.Element => (
     <HashRouter>
       {/* <ScrollToTop> */}
       <div className="main__wrapper">
-        <header className="main__wrapper--header">
+        <header className="flex items-center sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-white/20 shadow-sm px-4">
           <Header />
         </header>
 
@@ -33,7 +33,7 @@ const ReactRouter: FC = (): JSX.Element => (
           </Routes>
         </main>
 
-        <footer className="main__wrapper--footer">
+        <footer className="main__wrapper--footer sticky bottom-0 z-50 bg-white border-b border-gray-200">
           <Footer />
         </footer>
       </div>

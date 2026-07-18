@@ -6,7 +6,7 @@ import FooterComponent from '../components/FooterComponent';
 const Footer = () => {
 	// console.log('Test :');
 	return (
-		<div className='ui row'>
+		<div className='w-full'>
 			<FooterComponent />
 		</div>
 	);

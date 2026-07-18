@@ -42,10 +42,10 @@ const SearchPage: FC<IProp> = () => {
 	}, [dispatch, val]);
 
 	return (
-		<div className='ui row'>
+		<div className='w-full pt-4'>
 			<SearchComponent
-				classNameButton='ui primary button'
-				classNameSearch='custom-search'
+				classNameButton='rounded bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700'
+				classNameSearch='w-full rounded-l border border-slate-300 bg-white px-4 py-2 text-sm outline-none ring-0 transition focus:border-blue-500'
 				buttonClick={buttonClick}
 				handleChange={handleChange}
 				onKeyUp={onKeyUp}
